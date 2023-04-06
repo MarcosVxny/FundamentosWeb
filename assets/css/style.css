@@ -1,0 +1,23 @@
+/*Estilos da pagina index.html*/
+.p1{
+    font-size: 20px;
+}
+.center {
+    text-align: center;
+}
+
+
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Estilos para pagina contato.html*/
+
+
+
+
