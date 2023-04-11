@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <ul>
+    <ul id="menu">
         <li>
         <a href="index.html">Home</a>
         </li>
@@ -17,24 +17,33 @@
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="center">Entre em contato comigo</h1>
+    <div class="ci">
+        <div>
+        <form>
+            <label for="nome">Nome:</label> <br> 
+            <input class="bn" type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome" ></div>
+          
+            <br>
+            <label for="email">Email:</label> <br>
+            <input class="be" type="email" id="email" onkeyup="validaEmail()">
+            <div id = "txtEmail"></div>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="50" rows="5"></textarea>
-        <br>
-        <br>
+             
+            <br>
+            <label for= "assunto">Assunto:</label> <br>
+            <textarea  name="assunto" id="assunto" cols="60" rows="5"  onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
+            <br>
+    
+            <button class="button" onclick="enviar">Enviar</button>
+        </form>
 
-        <button>Enviar</button>
+    </div>
 
-    </form>
+    <script src="assets/js/script.js"></script>
+
+    
 </body>
 </html>
